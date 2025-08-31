@@ -1,7 +1,7 @@
 // styles/RegisterStyle.js
 import { StyleSheet } from "react-native";
 
-const RegisterStyle = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
@@ -41,4 +41,4 @@ const RegisterStyle = StyleSheet.create({
   },
 });
 
-export default RegisterStyle;
+export default styles;

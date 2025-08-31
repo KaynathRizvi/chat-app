@@ -14,8 +14,10 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.json({ message: "API running" }));
 
-app.use("/auth", authRoutes);
-app.use("/users", userRoutes);
+const authRoutes = require("./routes/authRoutes.js");
+app.use("/api/auth", authRoutes);
+
+app.use("/api/users", userRoutes);
 
 mongoose
   .connect(config.mongoUri)
